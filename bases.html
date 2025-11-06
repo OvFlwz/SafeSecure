@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les bases de la sécurité numérique - Safe&Secure</title>
+
+    <!-- CSS Reveal.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.css" id="theme">
+
+    <!-- Highlight.js pour code -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/monokai.min.css">
+
+    <!-- Forcer fond noir et texte blanc -->
+    <style>
+        .reveal {
+            background-color: #000 !important;
+            color: #fff !important;
+        }
+        .reveal img {
+            display: block;
+            margin: 0 auto;
+            max-width: 80%;
+            height: auto;
+        }
+        a { color: #0ff; }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+        <body class="reveal-viewport" style="transition: transform 0.8s; --slide-scale: 0.6596571428571428; --slide-width: 960px; --slide-height:700px;">
+            <div class="reveal slide center focused has-vertical-slides has-horizontal-slides ready" role="application" data-transition-speed="default" data-background="fade" style="cursor: none;">
+                <div class="slides" style="width: 960px; height: 700px; inset: 50% auto auto 50%; transform: translate(-50%, -50%) scale(0.659657);">
+                    <section class="present" style="top: 157.5px; display: block;">
+                        <h1>Les bases de la sécurité numérique</h1>
+                    </section>
+                    <section class="future" data-charset="utf-8" style="top: 14px; display: block;" data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true">
+                        <p>
+                            <img src="/Assets/pegasus.jpg" alt="Pegasus">
+                        </p>
+                        <p>
+                            En 2021, le logiciel
+                            <a href="https://fr.wikipedia.org/wiki/Pegasus_(logiciel_espion)">Pegasus</a>
+                            a été utilisé pour espionner 189 journaliste, 85 militants des droits de l'homme, 65 dirigeants d'entreprises et 600 personnalités politiques
+                        </p>
+                    </section>
+                    <section class="stack future" data-charset="utf-8" style="top: 0px; display: block;" hidden="" aria-hidden="true">
+                        <section data-markdown="" data-markdown-parsed="true" style="top: 185px; display: block;">
+                            <h1 id="modèle-de-meance">Modèle de menace</h1>
+                            <p>
+                                Il n'y a rien de sécurisé à 100%, juste des informations protégées contre une mance spécifique pendant un temp donné. 
+                            </p>
+                        </section>
+                        <section class="future" data-markdown="" data-markdown-parsed="true" aria-hidden="true" style="top: 350px; display: none;">
+                            <h2 id="5-questions-à-se-poser">5 questions à se poser</h2>
+                            <ol>
+                                <li class="fragment" data-fragment-index="1">Quelles informations dois-je protéger ?</li>
+                                <li class="fragment" data-fragment-index="2">Qui pourrait s'y interesser ?</li>
+                                <li class="fragment" data-fragment-index="3">Quels moyens peuvent-ils mobiliser ?</li>
+                                <li class="fragment" data-fragment-index="4">Quelles sont les conséquences s'ils arrivent à accéder à ces informations ?</li>
+                                <li class="fragment" data-fragment-index="5">Quels moyens suis-je ^prêt à mettre en oeuvre ?</li>
+                            </ol>
+                        </section>
+                        <section class="future" data-markdown="" data-markdown-parsed="true" aria-hidden="true" style="top: 350px; display: none;">
+                            <h2 id="quelles-informations-protéger">Quelles informations protéger ? </h2>
+                            <p>
+                                Emails, chats, conversations téléphoniques, photos, vidéos, adresses et identité de mes contacts, etc.
+                            </p>
+                        </section>
+                        <section class="future" data-markdown="" data-markdown-parsed="true" aria-hidden="true" style="top: 350px; display: none;">
+                            <h2 id="qui-pourrait-sy-intéresser">Qui pourrait s'y intéresser ?</h2>
+                            <ul>
+                                <li>Les organisations ou personnes objet de mon article</li>
+                                <li>Un gouvernement</li>
+                                <li>Un juge ou un policier</li>
+                                <li>Une société privée</li>
+                            </ul>
+                        </section>
+                        <section class="future" data-markdown="" data-markdown-parsed="true" aria-hidden="true" style="top: 350px; display: none;">
+                            <h2 id="quels-moyens-peuvent-ils-mobiliser">Quels moyens peuvent-ils mobiliser ?</h2>
+                            <ul>
+                                <li>Techniques : interception, hacking</li>
+                                <li>Légaux : écoutes, convocations</li>
+                                <li>Sociaux : Social engineering</li>
+                            </ul>
+                        </section>
+                        <section class="future" data-markdown="" data-markdown-parsed="true" aria-hidden="true" style="top: 350px; display: none;">
+                            <h2 id="quelles-conséquences">Quelles conséquences ?</h2>
+                            <ul>
+                                <li>Problèmes avec la justice pour une source</li>
+                                <li>Menace physiques</li>
+                                <li>Sujet sensibles</li>
+                            </ul>
+                        </section>
+                        <section class="future" data-markdown="" data-markdown-parsed="ture" aria-hidden="true" style="top: 350px; display: none;">
+                            <h2 id="quels-moyens-suis-je-prêt-à-mettre-en-oeuvre">Quels moyens suis-je prêt à mettre en oeuvre ?</h2>
+                            <ul>
+                                <li>Techniques</li>
+                                <li>Juridiques</li>
+                            </ul>
+                        </section>
+                    <section class="stack future" data-charset="utf-8" style="top: 350px; display: none;" hidden="" aria-hidden="true">
+                        <section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;">
+                            <h1 id="entre-la-chaise-et-le-clavier">Entre la chaise et le clavier</h1>
+                        </section>
+                        <section class="future" data-markdown="" data-markdown-parsed="true" aria-hidden="true" style="top: 350px; display: none;">
+                            <p>
+                                <img src="Assets/saloon.jpg" alt="Saloon">
+                            </p>
+                            <p>Ne vous asseyez pas dos à une fenêtre</p>
+                        </section>
+                        <section class="future" data-markdown="" data-markdown-parsed="" aria-hidden="true" style="top: 350px; display: none;">
+                            <p>
+                                <img src="/Assets/filtre.jpg" alt="Filtre de confidentialité">
+                            </p>
+                            <p>Utilisez un filtre de confidentialité</p>
+                        </section>
+                        <section class="future" data-markdown="" data-markdown-parsed="true" aria-hidden="true" style="top: 350px; display: none;">
+                            <p>
+                                <img src="/Assets/Condom usb.jpg" alt="Condom USB">Sortez couverts
+                            </p>
+                        </section>
+                        <section class="future" data-markdown="" data-markdown-parsed="true" aria-hidden="true" style="top: 350px; display: none;">
+                            <p>
+                                <img src="/Assets/hostile-environment.jpeg" alt="Milieu hostile">
+                            </p>
+                            <p>
+                                En milieu "hostile" ne vous séparez jamais de vos appareils.
+                            </p>
+                        </section>
+                        <section class="stack future" data-charset="utf-8" style="top: 350px; display: none;" hidden="" aria-hidden="true">
+                            <section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;">
+                                <h1 id="hygiène-numérique">Hygiène numérique</h1>
+                            </section>
+                            <section class="future" data-markdown="" data-markdown-parsed="" aria-hidden="true" style="top: 350px; display: none;">
+                                <img class="r-stretch" src="/Assets/hygiene.gif" alt="Hygiène numérique" title="Hygiène numérique " style="height: 700px; width: 892px;">
+                            </section>
+                            <section class="future" data-markdown="" data-markdown-parsed="true" aria-hidden="true" style="top: 350px; display: none;">
+                                <ul>
+                                    <li class="fr agment" data-fragment-index="1">Installez les <strong>mises à jour</strong>de votre système d'exploitation et de vos logiciel</li>
+                                    <li class="fragment" data-fragment-index="2">Utilisez un <strong>antivirus</strong> <a href=https://www.malwarebytes.com/fr>Malwarebytes</li>
+                                        <a href="https://www.mcafee.com/fr-fr/index.html">Mcafee</a> ou <a href="https://fr.norton.com/">Norton</a>
+                                    <li class="fragment" data-fragment-index="3">Activez votre <strong>Firewall</strong>sur 
+                                    <a href="https://support.hp.com/be-fr/document/ish_10658623-10678197-16">Windows</a>et sur <a href="https://support.apple.com/fr-fr/guide/mac-help/mh11783/mac">Mac</a></li>
+                                </ul>
+                            </section>
+                            <section class="future" data-markdown="" data-markdown-parsed="" aria-hidden="true" style="top: 350px; display: none;">
+                                <33 id="winsoxs">Windows</33>
+                                <p>Pour vérifier ou activer l'antivirus ainsi que le Firewall, Tapez Windows Defender dans le menu<em>Démarrer</em>:</p>
+                                <p><img src="/Assets/parefeu-win10.png" alt="Pare feu Windows"></p>
+                            </section>
+                            <section class="future" data-markdown="" data-markdown-parsed="true" aria-hidden="true" style="top: 350px; display: none;">
+                                <p>Plus bas dans la même fenêtre pour le Pare Feu :</p>
+                                <p><img src="Assets/parefeu-win10-2.png" alt="Pare Feu Windows"></p>
+                            </section>
+                            <section data-markdown="" data-markdown-parsed="true" class="future" aria-hidden="true" style="top: 350px; display: none;">
+                                <h3 id="mac">Mac</h3>
+                                <p>Pour vérifier ou activer le firewall, se rendre dans les Préférences Système / Sécurité et confidentialité</p>
+                            </section>
+                            <section class="future" data-markdown="" data-markdown-parsed="true" aria-hidden="true" style="top: 350px; display: none;">
+                                <p><img src="Assets/macosventura-firewall.jpg" alt="Pare Feu Mac"></p>
+                            </section>
+                            <section class="future" data-markdown="" data-markdown-parsed="true" aria-hidden="true" style="top: 350px; display: none;">
+                                <p>Cliquez pour l'activer</p>
+                            </section>
+                            <section class="future" data-markdown="" data-markdown-parsed="true" aria-hidden="true" style="top: 350px; display: none;">
+                                <p><img src="Assets/macosventura-firewall-enable.webp" alt="Pare Feu Mac"></p>
+                            </section>
+                            <section class="future" data-markdown="" data-markdown-parsed="" aria-hidden="true" style="top: 3550px; display: none;">
+                                <h2 id="verrouillez">Verrouillez</h2>
+                                <p><strong>Verrouillez</strong>votre session sur ordinateur et smartphone même pour une courte absence</p>
+                            </section>
+                            <section class="future" data-markdown="" data-markdown-parsed="true" aria-hidden="true" style="top: 350px; display: none;">
+                                <h2 id="chiffrez">Chiffrez</h2>
+                                <p><strong><a href="">Chiffrez</a>
+                                </strong>
+                                vos données sur votre disque dur, support externes, sur votre <a href="">smartphone</a> et dans le <em>cloud</em> avec PGP, Bitlocker, <a href="">VeraCrypt</a>
+                            , <a href="https://support.apple.com/fr-fr/guide/mac-help/mh11785/mac">FileVault</a>
+                        ou <a href="">Cryptomator</a>.
+                    </p>
+                    </section>
+                    <section class="future" data-markdown="" data-markdown-parsed="true" aria-hidden="true" style="top: 350px; display: none;">
+                        <h2 id="dans-le-cloud">Dans le cloud</h2>
+                    </section>
+                    <section class="future" data-markdown="" data-markdown-parsed="true" aria-hidden="true" style="top: 350px; display: none;">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th><small>Chiffrement en transit</small>
+                                    </th>
+                                    <th>
+                                        <small>Chiffrement serveur</small>
+                                    </th>
+                                    <th>
+                                        <small>E2E</small>
+                                    </th>
+                                    <th>
+                                        <small>Open Source</small>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="https://nextcloud.com/blog/nextcloud-introducing-native-integrated-end-to-end-encryption/">NextCloud</a>
+                                    </td>
+                                    <td>🗹</td>
+                                    <td>🗹</td>
+                                    <td>🗹</td>
+                                    <td>🗹</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="https://docs.cryptpad.org/fr/user_guide/security.html">CryptPad</a>
+                                    </td>
+                                    <td>🗹</td>
+                                    <td>🗹</td>
+                                    <td>🗹</td>
+                                    <td>🗹</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="https://proton.me/fr/drive/security">Proton Drive</a>
+                                    </td>
+                                    <td>🗹</td>
+                                    <td>🗹</td>
+                                    <td>🗹</td>
+                                    <td>🗹</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="https://support.apple.com/fr-fr/102651">iCloud</a>
+                                    </td>
+                                    <td>🗹</td>
+                                    <td>🗹</td>
+                                    <td>🗹</td>
+                                    <td>🗷</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="https://learn.microsoft.com/fr-fr/purview/data-encryption-in-odb-and-spo">Onedrive, Sharepoint</a>
+                                    </td>
+                                    <td>🗹</td>
+                                    <td>🗹</td>
+                                    <td>🗷</td>
+                                    <td>🗷</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="https://support.google.com/drive/answer/10519333?hl=fr&co=GENIE.Platform%3DDesktop&oco=1">Google Drive</a>
+                                    </td>
+                                    <td>🗹</td>
+                                    <td>🗹</td>
+                                    <td>🗷</td>
+                                    <td>🗷</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="https://www.dropbox.com/fr/features/cloud-storage/cloud-security">Dropbox</a>
+                                    </td>
+                                    <td>🗹</td>
+                                    <td>🗹</td>
+                                    <td>🗷</td>
+                                    <td>🗷</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </section>
+                <section class="stack future" data-charset="utf-8" style="top: 350px; display: none;" hidden="" aria-hidden="true">
+                    <section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;">
+                        <h1 id="mots-de-passe">
+                            <del>Mots depasse</del>
+                        </h1>
+                        <p>Votre mot de passe est-il <a href="https://password.kaspersky.com/fr/">suffisamment robuste</a> 
+                            ?
+                        </p>
+                    </section>
+                    <section class="future" data-markdown="" data-markdown-parsed="true" aria-hidden="true" style="top: 350px; display: none;">
+                        <ul>
+                            <li>
+                                Oubliez les 
+                                <del>mots de passe</del>
+                                , utilisez des 
+                                <a href="https://www.okta.com/fr-fr/identity-101/password-vs-passphrase/">phrases de passe</a>
+                            </li>
+                            <li class="fragment" data-fragment-index="1">Plus votre phrase de passe comporte de caractères, plus elle sera difficile à craquer</li>
+                            <li class="fragment" data-fragment-index="2">Évitez les titres de films, de romans ou toute information personnelle facile à deviner</li>
+                            <li class="fragment" data-fragment-index="3"><strong>Utilisez une phrase différente par service</strong></li>
+                            <li class="fragment" data-fragment-index="4">Aidez-vous de gestionnaires de mots de passe : 
+                                <a href="https://bitwarden.com/">Bitwarden</a>, 
+                                <a href="https://keepersecurity.com/">Keeper</a> ou
+                                <a href="https://keepass.info/">KeePass</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="future" data-markdown="" data-markdown-parsed="true" aria-hidden="true" style="top: 350px; display: none;">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Bitwarden</th>
+                                    <th>Keeper</th>
+                                    <th>keepass</th>
+                                </tr> 
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Open Source </td>
+                                    <td>Oui</td>
+                                    <td>Oui</td>
+                                    <td>Oui</td>
+                                </tr>
+                                <tr>
+                                    <td>Synchronisation</td>
+                                    <td>Oui</td>
+                                    <td>Oui</td>
+                                    <td>Non</td>
+                                </tr>
+                                <tr>
+                                    <td>Générateur de mots de passe</td>
+                                    <td>Oui</td>
+                                    <td>Oui</td>
+                                    <td>Oui</td>
+                                </tr>
+                                <tr>
+                                    <td>Gratuit</td>
+                                    <td>Freemium</td>
+                                    <td>Freemium</td>
+                                    <td>Gratuit</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                   <section class="future" data-markdown="" data-markdown-parsed="true" aria-hidden="true" style="top: 350px; display: none;">
+                    <p>
+                        <img src="/Assets//password-table-fr.png" alt="La force d\'un mot de passe">
+                    </p>
+                   </section>
+                   <section class="future" data-markdown="" data-markdown-parsed="true" aria-hidden="true" style="top: 350px; display: none;">
+                    <p>
+                        Activez la 
+                        <strong>double authentification</strong>
+                        sur vos comptes
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="https://myaccount.google.com/security">Google</a>
+                        </li>
+                        <li>
+                            <a href="https://learn.microsoft.com/fr-fr/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide">Microsoft</a>
+                        </li>
+                        <li>
+                            <a href="https://www.moyens.net/comment/comment-verifier-qui-a-acces-a-votre-iphone-et-a-votre-compte-apple/">Apple</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/settings/account/login_verification">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://accountscenter.facebook.com/password_and_security">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://help.instagram.com/566810106808145">Instagram</a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section class="future" data-background="" style="top: 350px; display: none;" data-background-image="" hidden="" aria-hidden="true">
+                <h1>Questions ?</h1>
+            </section>
+            <section class="future" style="top: 350px; display: none;" hidden="" aria-hidden="true">
+                <h2>Contact</h2>
+                <ul>
+                    <li>
+                        Mail : snsecure@outlook.fr
+                    </li>
+                    <li>
+                        Mastodon :
+                        <a href="https://mastodon.social/@SnSec">SnSec</a>
+                    </li>
+                    <li style="list-style-type: none;">
+                </ul>
+            </section>
+            <section class="future" style="top: 350px; display: none;" hidden="" aria-hidden="true">
+                <a href="">
+                    <img src="">
+                </a>
+                <p>
+                    <small>Contenu sous licence
+                        <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">Creative Commons CC BY SA</a>
+                        .
+                    </small>
+                </p>
+            </section>
+        </div>
+        <div class="backgrounds">
+            <div class="slide-background present" style="display: block;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background-future" style="display: block;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background stack future" style="display: block;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            <div class="slide-background present" style="display: block;" data-loaded="true">
+                <div class="slide-background-content"></div>
+            <div class="slide-background future" style="display: none;">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background future" style="display: none;">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background future" style="display: none;">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background future" style="display: none;">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background future" style="display: none;">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background future" style="display: none;">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background future" style="display: none;">
+                <div class="slide-background-content"></div>
+            </div>
+            </div>
+            <div class="slide-background stack future" style="display: none;">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background present" style="display: none;">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background future" style="display: none;">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background future" style="display: none;">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background future" style="display: none;">
+                <div class="slide-background-content"></div>
+            </div>
+            <div class="slide-background future" style="display: none;">
+                <div class="slide-background-content"></div>
+            </div>
+            </div>
+            <div class="slide-background stack future" style="display: none;">
+                <div class="slide-background-content"></div>
+                <div class="slide-background present" style="display: none;">
+                    <div class="slide-background-content"></div>
+                </div>
+                <div class="slide-background future" style="display: none;">
+                    <div class="slide-background-content"></div>
+                </div>
+                <div class="slide-background future" style="display: none;">
+                    <div class="slide-background-content"></div>
+                </div>
+                <div class="slide-background future" style="display: none;">
+                    <div class="slide-background-content"></div>
+                </div>
+                <div class="slide-background future" style="display: none;">
+                    <div class="slide-background-content"></div>
+                </div>
+                <div class="slide-background future" style="display: none;">
+                    <div class="slide-background-content"></div>
+                </div>
+                <div class="slide-background future" style="display: none;">
+                    <div class="slide-background-content"></div>
+                </div>
+                <div class="slide-background future" style="display: none;">
+                    <div class="slide-background-content"></div>
+                </div>
+                <div class="slide-background future" style="display: none;">
+                    <div class="slide-background-content"></div>
+                </div>
+                <div class="slide-background future" style="display: none;">
+                    <div class="slide-background-content"></div>
+                </div>
+                <div class="slide-background future" style="display: none;">
+                    <div class="slide-background-content"></div>
+                </div>
+                <div class="slide-background future" style="display: none;">
+                    <div class="slide-background-content"></div>
+                </div>
+                <div class="slide-background future" style="display: none;">
+                    <div class="slide-background-content"></div>
+                </div>
+                </div>
+                <div class="slide-background stack future" style="display: none;">
+                    <div class="slide-background-content"></div>
+                <div class="slide-background present" style="display: none;">
+                    <div class="slide-background-content"></div>
+                </div>
+                <div class="slide-background future" style="display: none;">
+                    <div class="slide-background-content"></div>
+                </div>
+                <div class="slide-background future" style="display: none;">
+                    <div class="slide-background-content"></div>
+                </div>
+                <div class="slide-background future" style="display: none;">
+                    <div class="slide-background-content"></div>
+                </div>
+                <div class="slide-background future" style="display: none;">
+                    <div class="slide-background-content"></div>
+                </div>
+                <div class="slide-background future" style="display: none;">
+                    <div class="slide-background-content"></div>
+                </div>
+                </div>
+                <div class="slide-background future" data-background="" style="display: none;">
+                    <div class="slide-background-content"></div>
+                </div>
+                <div class="slide-background future" style="display: none;">
+                    <div class="slide-background-content"></div>
+                </div>
+                <div class="slide-background future" style="display: none;">
+                    <div class="slide-background-content"></div>
+                </div>
+                </div>
+                <div class="slide-number" style="display: none;"></div>
+            
+                <div class="progress" style="display: block;">
+                    <span style="transform: scaleX(0);"></span>
+                   
+                </div>
+                <div class="speaker-notes" data-prevent-swipe="" tabindex="0"></div>
+                <div class="pause-overlay">
+                    <button class="resume-button">Resume presentation</button>
+                </div>
+                <div class="aria-status" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);" aria-live="polite" aria-atomic="true">Les bases de la sécurité numérique</div>
+                
+            </div>
+             <!-- JS Reveal.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+
+    <script>
+        Reveal.initialize({
+            slidenumber: false,
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            transition: 'slide',
+            dependencies: [
+                { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js' },
+                { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js', async: true },
+                { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+            ]
+        });
+    </script>
+</body>
+</html>
