@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse d'images et vidéos - SafeSecure</title>
+
+    <!-- CSS Reveal.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.css" id="theme">
+
+    <!-- Highlight.js pour code -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/monokai.min.css">
+
+    <!-- Forcer fond noir et texte blanc -->
+    <style>
+        .reveal {
+            background-color: #000 !important;
+            color: #fff !important;
+        }
+        .reveal img {
+            display: block;
+            margin: 0 auto;
+            max-width: 80%;
+            height: auto;
+        }
+        a { color: #0ff; }
+    </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Slide principale -->
+      <section style="top: 350px;">
+        <h2>Analyse d'images et vidéos
+      </section>
+
+     <section>
+
+  <!-- 📱 Slide 1 : Titre -->
+  <section style="top: 350px;">
+    <h2 id="investigation-en-ligne-ou-osint">OBJECTIFS</h2>
+    </section>
+  
+
+  <!-- 📸 Slide 2 : Image principale -->
+  <section style="top: 350px;">
+    <ol>
+        <li>
+        Comprendre les métadonnées
+        </li>
+        <li>
+        Utiliser la recherche inversée
+        </li>
+        <li>
+        Analyser le contexte d’une image ou d’une vidéo
+        </li>
+    </ol>
+    
+  </section>
+     </section>
+
+     <section>
+
+  <!-- 📱 Slide : Les Fakes news sont partout -->
+<section>
+  <h2 id="les-fakes-news-sont-de-partout">Les fake news sont partout</h2> 
+</section>
+
+
+
+
+
+
+<!-- Slide : Bruxelles 2016 -->
+<section>
+  <h2 id="bruxelles-2016">Bruxelles 2016</h2>
+  <p>
+    Suite à l'attentat à l'aéroport de Zaventem,
+    <a href="https://www.youtube.com/watch?v=mauYfrcudlY&rco=1">une vidéo de caméra de surveillance</a>
+    a commencé à circuler.
+  </p>
+  <p>
+    Elle a été reprise par tous les médias.
+  </p>
+  <p>
+    <strong>Fake ou pas fake ?</strong>
+  </p>
+</section>
+</section>
+
+
+<section>
+
+    <section style="top: 350px;">
+        <h2 id="recherche-inversé">Recherche Inversée</h2>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section style="top: 350px;">
+    <p>
+        Identifiez le premier site de publication d'une image ou d'une photo.
+    </p>
+  </section>
+
+
+
+<section style="top: 350px;">
+    <p>
+        Vérifiez l'antériorité d'une image ou d'une vidéo avec :
+    </p>
+    <ul>
+        <li>
+            <a href="https://tineye.com/">TinEye</a>
+        </li>
+        <li>
+            <a href="https://images.google.com/">Google image</a>
+        </li>
+        <li>
+            <a href="https://yandex.ru/images/">Yandex</a>
+        </li>
+        <li>
+            <a href="https://pimeyes.com/en">PimEyes</a> (pour les visages uniquement)
+        </li>
+    </ul>
+</section>
+
+
+
+<section style="top: 350px;">
+    <h2 id="exercices-:-fake-ou-non">Exercices : Fake ou non ?</h2>
+</section>
+
+
+<section style="top: 350px;">
+    <p>
+        <img src="/Assets/osint-pilote.jpg">
+    </p>
+</section>
+
+<section style="top: 350px;">
+    <p>
+        <img src="/Assets/enfant_3.jpg">
+    </p>
+</section>
+</section>
+
+<section>
+
+
+
+<section style="top: 350px;">
+  <h2 id="analyser-le-contexte">Analyser le contexte</h2>
+  <p>
+    Les outils, c'est bien, mais ça ne fait pas tout.
+  </p>
+  <p>
+    Débunker une photo manipulée, c'est surtout une histoire d'observation.
+  </p>
+</section>
+
+
+<section style="top: 350px;">
+  <p>
+    <img src="/Assets/osint-contexte.png" alt="Analyse du contexte OSINT">
+  </p>
+</section>
+
+
+
+
+<section style="top: 350px;">
+    <p>
+        <img src="/Assets/osint-iran.png">
+    </p>
+    <p>
+        La scène était présentée comme se déroulant en Iran, en décembre 2019.
+    </p> 
+    Cette photo est intéressante car elle offre plusieurs détails permettant de la vérifier.
+    </p>
+    </section>
+
+
+    <section style="top: 350px;">
+        <ul>
+            <li>
+                Les boucliers de la police iranienne sont-ils de cette couleur ?
+            </li>
+            <li>
+                Les trottoirs de Téhéran peints en jaune ?
+            </li>
+            <li>
+                Les jeunes Iraniens habillés de cette façon ?
+            </li>
+            <li>
+                <strong>
+                    Quels temps fait-il en Iran en décembre ?
+                </strong>
+            </li>
+        </ul>
+    </section>
+
+
+<section style="top: 350px;">
+    <p>
+        Pour connaître la météo en tout lieu et tout temps : 
+    </p>
+    <p>
+        <a href="https://www.wunderground.com/">wunderground.com</a>
+    </p>
+</section>
+</section>
+
+
+</section>
+
+<!-- Slide : Analyser le contexte -->
+<section style="top: 350px;">
+  <h2 id="trouver-le-lieu-d'une-prise-de-vue">Trouver le lieu d'une prise de vue</h2>
+  </section>
+
+
+
+<section>
+
+
+
+
+<section style="top: 350px;">
+ <ol>
+    <li>
+        Réduire la zone de recherche en analysant l’image (architecture, paysage, climat/végétation, son & dialogues, etc).
+    </li>
+    <li>
+        Obtenir de l’imagerie de référence de la zone de recherche : 
+        <a href="">Google streetview</a>,
+        Images satellites, images publiées sur les réseaux sociaux, etc.
+    </li>
+ </ol>
+</section>
+
+
+
+
+
+
+<section style="top: 350px;">
+  <p>
+    Cette photo montre quelques détails qui permettent de localiser très précisément la prise de vue à l'aide de Google Maps.
+  </p>
+  <p>
+    A vous de jouer.
+  </p>
+</section>
+
+
+
+
+<section style="top: 350px;">
+    <p>
+        <img src="/Assets/osint-chine.png">
+    </p>
+</section>
+</section>
+
+
+
+<section>
+
+    <section style="top: 350px;">
+        <h2 id="les-métadonnées">Les métadonnées</h2>
+    </section>
+
+
+
+
+
+
+
+
+<!-- Slide : Analyser le contexte -->
+<section style="top: 350px;">
+  <p>
+    Tout fichier informatique, en plus de ses données, comprend des informations descriptives appelées "métadonnées".
+  </p>
+  <p>
+    Elles sont présentes dans les fichiers :
+  </p>
+  <ul>
+    <li>
+        pdf
+    </li>
+    <li>
+        jpeg, png
+    </li>
+    <li>
+        docx, odt, etc.
+    </li>
+  </ul>
+</section>
+
+<!-- Slide : Image OSINT contexte -->
+<section style="top: 350px;">
+  <h2 id="lire-les-metadonnées-d'une-image">Lire les métadonnées d'une image</h2>
+  <ul>
+    <li>
+        En ligne avec le site 
+        <a href="">fotoforensics</a>
+    </li>
+    <li>
+        Directement dans votre navigateur avec une extension avec
+        <a href="">exif viewer</a> sur Firefox et Chrome 
+    </li>
+  </ul>
+</section>
+
+<!-- Dernier slide : Image OSINT requin -->
+<section style="top: 350px;">
+  <ul>
+    <li>
+        <a href="">Les images générées par IA contiennent des données spécifiques</a>
+        authentifiant leur provenance d'ou outil d'IA générative : les données C2PA.
+    </li>
+    <li>
+        Tous outils de génération d'image ne respectent pas ce standard (MidJourney pour en citer qu'un seul).
+    </li>
+    <li>
+        Les images générées par IA ne contiennent pas de métadonnées exif.
+    </li>
+  </ul>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Slide : Image OSINT contexte -->
+<section style="top: 350px;">
+  <ul>
+    <li>
+        Depuis 
+        <a href="">la "mésaventure" de John McAfee</a>,
+        la plupart des services d'hébergement d'images et tous les réseaux sociaux, suppriment aujourd'hui  les métadonnées des images.
+    </li>
+    <li>
+        Il est très facile de supprimer les métadonnées d'une image en l'exportant dans un autre format que l'original 
+        (jpeg > png) ou en faisant une capture d'écran.
+    </li>
+  </ul>
+</section>
+
+<!-- Dernier slide : Image OSINT requin -->
+<section style="top: 350px;">
+  <p>
+    L'image suivante contient des métadonnées C2PA indiquant qu'elle à été générée par IA.
+  </p>
+</section>
+
+
+
+  
+
+  <!-- Slide : Bruxelles 2016 -->
+<section style="top: 350px;">
+    <p>
+        <img src="/Assets/iageneratedimage.jpg">
+    </p>
+</section>
+
+
+<section style="top: 350px;">
+    <p>
+      Celle-ci, générée avec le site
+      <a href="https://this-person-does-not-exist.com/fr">This person does not exist</a>,
+      n'en contient pas
+    </p>
+</section>
+
+<section style="top: 350px;">
+    <p>
+        <img src="/Assets/osint_fake-face.jpg">
+    </p>
+</section>
+
+
+<section style="top: 350px;">
+    <h2 id="donc-?">Donc ?</h2>
+    <ul>
+        <li>
+            Si une image contient des métadonnées C2PA, c'est forcément une image générée par IA.
+        </li>
+        <li>
+            Si une image ne contient pas de métadonnées C2PA, cela ne vous assure pas qu'elle n'ait pas été générée par IA.
+        </li>
+    </ul>
+</section>
+
+<section style="top: 350px;">
+    <h2 id="et-alors-l'outil-magique">Et alors, l'outil magique ?</h2>
+</section>
+
+
+<section style="top: 350px;">
+    <p>
+        <img src="/Assets/you.gif" height="500" width="800">
+    </p>
+</section>
+
+<section style="top: 350px;">
+    <ul>
+        <li>
+            <del>
+                Les personnes ont-elles 6 doigts ?
+            </del>
+        </li>
+        <li>
+            Est-ce que vous  disposez de la version ORIGINALE ?
+        </li>
+        <li>
+            Savez vous QUI a pris cette photo ?
+        </li>
+        <li>
+            Savez vous OU cette photo à été prise ? 
+        </li>
+        <li>
+            Savez vous QUAND cette photo a été prise ? 
+        </li>
+        <li>
+            Savez vous POURQUOI cette photo a été prise ? 
+        </li>
+    </ul>
+</section>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 🧠 Slide 1 : Titre -->
+ 
+
+
+
+
+
+  
+        
+  
+
+
+
+
+
+
+
+
+
+
+  </section>
+  
+
+
+
+ 
+
+
+
+
+  
+
+
+            
+
+
+
+      
+     
+
+
+     
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Slide : Veracrypt -->
+
+
+
+  
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</section>
+  </section>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+<section style="top: 350px;">
+    <h1 id="Questions">Questions ?</h1>
+</section>
+
+<section style="top: 350px;">
+    <h2 id="contacts">Contacts</h2>
+    <ul>
+        <li>
+            Mail : snsecure@outlook.fr
+        </li>
+    </ul>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JS Reveal.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true
+        });
+    </script>
+</body>
+</html>

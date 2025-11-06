@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communications sécurisées - SafeSecure</title>
+
+    <!-- CSS Reveal.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.css" id="theme">
+
+    <!-- Highlight.js pour code -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/monokai.min.css">
+
+    <!-- Forcer fond noir et texte blanc -->
+    <style>
+        .reveal {
+            background-color: #000 !important;
+            color: #fff !important;
+        }
+        .reveal img {
+            display: block;
+            margin: 0 auto;
+            max-width: 80%;
+            height: auto;
+        }
+        a { color: #0ff; }
+    </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Slide principale -->
+      <section style="top: 350px;">
+        <h1>Communications sécurisées
+      </section>
+
+     <section>
+
+  <!-- 📱 Slide 1 : Titre -->
+  <section style="top: 350px;">
+    <h1 id="un-mouchard-de-poche">Chiffrement ou anonymat ?</h1>
+    
+  </section>
+
+  <!-- 📸 Slide 2 : Image principale -->
+  <section style="top: 350px;">
+    <ul>
+        <li>
+            Avec Whatsapp, Messenger ou Telegram, le contenu de vos messages est chiffré (plus ou moins selon l'application) mais pas les adresses des correspondants
+        </li>
+        <li>
+            Les métadonnées suffisent. 
+            Ex : 
+            <a href="https://www.latribune.fr/actualites/economie/international/20130606trib000768912/verizon-un-operateur-telephonique-au-service-de-l-espionnage-americain.html">Verizon</a>,
+            <a href="https://www.lemonde.fr/societe/article/2013/11/14/fadettes-du-monde-philippe-courroye-devant-le-csm_3513762_3224.html">Les fadettes du Monde</a>
+        </li>
+    </ul>
+  </section>
+
+  <section style="top: 350px;">
+   <p>
+    Ces outils vous permettent de vous fondre dans la masse.
+    Il ne protègent pas autant vos échanges que des outils qui les chiffreraient de bout en bout mais ils vous permettent de conserver un bon degrès d'anonymat.
+   </p>
+  </section>
+     </section>
+
+
+
+
+<section>
+
+  <!-- 📱 Slide : Métadonnées  -->
+    <section>
+  <h2 id="metadonnées">Communications anonymes</h2>
+  
+</section>
+
+
+  
+
+<!-- 🔐 Slide : La BASE -->
+<section style="top: 350px;">
+    <h2 id="la-boite-morte">La boite morte</h2>
+    <p>
+      Une boite morte est un emplacement permettant à des personnes d'échanger secrètement des messages sans avoir besoin de se rencontrer physiquement.
+      Ce principe peut se transposer dans le monde numérique.
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Slide : Veracrypt -->
+<section style="top: 350px;">
+    <ol>
+        <li>
+            Créez une boite mail d'un service mainstream.
+        </li>
+        <br>
+        <li>
+            Partagez les informations de connexion avec votre correspondant
+        </li>
+        <br>
+        <li>
+            Échangez des messages uniquement dans le dossier "Brouillons"
+        </li>
+    </ol>
+</section>
+
+<!-- Slide : Cryptomator -->
+
+  <!-- Slide vertical 1 : Le chiffrement -->
+  <section style="top: 350px;">
+    <p>
+        Avec une boite morte, les emails ne circulent pas sur le réseau.
+        La seule chose que pourra voir votre FAI est que vous vous connectez à un service de mail.
+        Attention, les messages dans la boite ne sont pas chiffrés et sont potentiellement accessibles à l'opérateur du service (Google pour Gmail par exemple).
+    </p>
+  </section>
+
+<!-- Slide Veracrypt -->
+<section>
+  <h3 id="document-partagés-en-ligne">Documents partagés en ligne</h3>
+  <p>
+    <img src="/Assets/CryptPad_logo_hero.svg">
+  </p>
+  <br>
+  <p>
+    Cryptpad est un service équivalent à Google Docs en mieux.
+  </p>
+</section>
+
+<!-- Slide Cryptomator -->
+<section>
+  <p>
+    Vous pouvez l'utiliser selon le même principe q'une boite morte, en plus sécurisé.
+  </p>
+</section>
+
+<!-- 🧠 Slide 1 : Titre -->
+  <section style="top: 350px;">
+    <p>
+        Les documents sont stockés de manière chiffrée et l'hébergeur du service ne peut acceder au contenu de vos documents sans la clé de chiffrement
+    </p>
+  </section>
+
+
+  <!-- 🧠 Slide 1 : Titre -->
+  <section style="top: 350px;">
+    <p>
+        Celle-ci se trouve dans l'url après le caractère "#".
+        Par convention, tout ce qui se trouve après un "#" dans l'url n'est pas accessible au serveur.
+    </p>
+    <blockquote>
+        <p>
+            <a href="https://cryptpad.fr/pad/#/2/pad/edit/**J6KGLGTPSH1lJyc0U1U2zFLz**/">https://cryptpad.fr/pad/#/2/pad/edit/
+                **J6KGLGTPSH1lJyc0U1U2zFLz**/
+            </a>
+        </p>
+    </blockquote>
+  </section>
+
+
+ <!-- 🧠 Slide 1 : Titre -->
+  <section style="top: 350px;">
+    <p>
+        Notez bien que toute personne ayant accès à l'adresse de votre document en ligne pourra en lire le contenu.
+    </p>
+  </section>
+</section>
+
+
+
+
+
+<section>
+
+  <!-- 🧠 Slide 1 : Titre -->
+  <section style="top: 350px;">
+    <h1 id="Communication-securisé">Communications sécurisées</h1>
+  </section>
+
+  <!-- 📱 Slide 2 : Deux écosystèmes -->
+  
+<section style="top: 350px;"> 
+    <h2 id="emails">Emails ?</h2>
+    <p>
+        Les mails ne sont pas sécurisés.
+        Il circulent encore sur le réseau en clair,
+        c'est à dire que le contenu peut en être lu par votre FAI comme le ferait un facteur avec une carte postale.
+    </p>
+</section>
+
+<section style="top: 350px;">
+    <p>
+        Pour remmédier à ce problème simplement, utilisez les services mails de 
+        <a href="https://proton.me/mail">Proton Mail</a>
+        ou 
+        <a href="https://tuta.com/fr">Tuta</a>.
+    </p>
+</section>
+
+
+<section style="top: 350px;">
+    <p>
+        Attention, seuls les mails envoyés de Proton Mail à Proton Mail ou de Tuta à Tuta sont chiffrés automatiquement.
+    </p>
+    <p>
+        Pour un email chiffré destiné à un destinataire externe, un mot de passe pour le chiffrement et le déchiffrement du mail doit être échangé préalablement.
+    </p>
+</section>
+  
+<section style="top: 350px;">
+    <p>
+        <img src="/Assets/protonmail.png">
+    </p>
+</section>
+
+<section style="top: 350px;">
+    <p>
+        <img src="/Assets/2b236f00f769018f1e71c4dc1f9bad04.png">
+    </p>
+</section>
+
+<section style="top: 350px;">
+    <p>
+        <a href="https://signal.org">Signal</a> 
+        est une application pour smartphone qui protège vos messages en les chiffrant sur votre téléphone et en les déchiffrant sur le téléphone du ou des destinataires.
+    </p>
+    <p>
+        C'est le chiffrement de bout en bout (E2E).
+        Ainsi même si les serveurs se font pirater, le contenu de vos échanges ne pourra être dévoilé.
+    </p>
+</section>
+
+
+<section style="top: 350px;">
+    <p>
+        Signal ne conserve pas les métadonnées au-delà de la période requise pour la circulation du message.
+    </p>
+    <p>
+        Il ne s'agit que d'une rétention temporaire, d'odre technique
+    </p>
+</section>
+
+<section style="top: 350px;">
+    <p>
+        Attention toutefois, les messages envoyés sont stockés sur les téléphones et si ceux ci sont saisis physiquement et déverrouillés, il sera alors possible d'accéder à vos messages.
+    </p>
+</section>
+
+<section style="top: 350px;">
+    <p>
+        Les messages éphémères vous permettant de définir un délai de suppression automatique pour vos messages
+    </p>
+
+
+
+
+
+</section>
+
+
+
+    <!-- Slide vertical 2 : 5 Questions à se poser (dernier slide en bas) -->
+    <section style="top: 350px;">
+        
+        <p>
+            <img src="/Assets/signal-msg-ephemere.png">
+        </p>
+    </section>
+    
+
+    <section style="top: 350px;">
+        <p>
+            Vous utilisez une autre application ? Discord, WhatsApp, iMessage, Telegram, etc. ? 
+        </p>
+        <p>
+            Vérifiez si votre application utilise le chiffrement de bout en bout et quelles données celle-ci laisse filtrer sur vos échanges en consultant ce 
+            <a href="https://www.messenger-matrix.de/messenger-matrix-en.html">tableau</a>
+        </p>
+    </section>
+</section>
+
+<section>
+
+  <!-- 📱 Slide : Métadonnées  -->
+    <section>
+  <h2 id="communications-anonymes-et-sécurisé">Communications anonymes et sécurisées</h2>
+  
+</section>
+
+<section style="top: 350px;">
+    <h2 id="wire">Wire</h2>
+    <p>
+        <a href="https://wire.com/fr/">Wire</a>
+        : 
+        Wire est un outil de communication sécurisé qui présente l'avantage de ne nécessiter aucun numéro de téléphone
+    </p>
+</section>
+
+<section style="top: 350px;">
+    <h2 id="briar">Briar</h2>
+    <p>
+        <a href="https://briarproject.org/download-briar/">Briar</a>
+        :
+        Briar est une application CPT (Communication chiffré en pair à pair via Tor).
+    </p>
+    <p>
+        Avec Briar, les communications circulent de smartphone en smartphone sans passer par un serveur central et utilisent le réseau Tor.
+    </p>
+</section>
+
+
+<section style="top: 350px;">
+    <h2 id="olvid">Olvid</h2>
+    <p>
+        <a href="https://olvid.io/fr/">Olvid</a>
+        :
+        Un simple pseudo suffit pour se créer un compte.
+    </p>
+    <p>
+        Les métadonnées sont chiffrées de bout en bout.
+    </p>
+    <p>
+        L’application est certifié CSPN par l’Agence nationale de la sécurité des systèmes d’information (ANSSI).
+    </p>
+    <p>
+        Olvid propose une version gratuite avec quelques fonctionnalités en moins (pas d'appels vocaux).
+    </p>
+</section>
+
+<section style="top: 350px;">
+    <p>
+        <img src="/Assets/giphy.gif" alt="On n'est jamais trop prudent" title="On n'est jamais trop prudent" width="" height="800">
+    </p>
+    <p>
+        On n'est jamais trop prudent
+    </p>
+</section>
+
+<section style="top: 350px;">
+    <h1 id="tno">TNO</h1>
+    <p>
+        Trust No One
+    </p>
+    <ul>
+        <li>
+            Proton Mail + Tor 
+        </li>
+        <li>
+            Proton Mail + VPN
+        </li>
+        <li>
+            Cryptpad + Tor 
+        </li>
+        <li>
+            Dropbox + Veracrypt 
+        </li>
+        </ul>
+</section>
+</section>
+
+
+  
+
+
+</section>
+  </section>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+<section style="top: 350px;">
+    <h1 id="Questions">Questions ?</h1>
+</section>
+
+<section style="top: 350px;">
+    <h2 id="contacts">Contacts</h2>
+    <ul>
+        <li>
+            Mail : snsecure@outlook.fr
+        </li>
+    </ul>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JS Reveal.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true
+        });
+    </script>
+</body>
+</html>

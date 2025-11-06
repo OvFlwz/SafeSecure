@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Données locales - SafeSecure</title>
+
+    <!-- CSS Reveal.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.css" id="theme">
+
+    <!-- Highlight.js pour code -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/monokai.min.css">
+
+    <!-- Forcer fond noir et texte blanc -->
+    <style>
+        .reveal {
+            background-color: #000 !important;
+            color: #fff !important;
+        }
+        .reveal img {
+            display: block;
+            margin: 0 auto;
+            max-width: 80%;
+            height: auto;
+        }
+        a { color: #0ff; }
+    </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Slide principale -->
+      <section style="top: 350px;">
+        <h1>Données locales
+      </section>
+
+     <section>
+
+  <!-- 📱 Slide 1 : Titre -->
+  <section style="top: 350px;">
+    <h1 id="un-mouchard-de-poche">Sauvegarde</h1>
+    <ul>
+        <li>
+            Sur un disque dur externe ?
+        </li>
+        <li>
+            Dans le cloud ? 
+        </li>
+    </ul>
+  </section>
+
+  <!-- 📸 Slide 2 : Image principale -->
+  <section style="top: 350px;">
+    <h2 id="dans-le-cloud">Dans le cloud</h2>
+    <ul>
+        <li class="fragment highlight-green visible current-fragment" data-fragment-index="1">
+            Une fouille physique ne peut compromettre vos données.
+        </li>
+        <li class="fragment highlight-red" data-fragment-index="2">
+            Vous avez besoin d'une bonne connexion.
+        </li>
+        <li class="fragment highlight-red" data-fragment-index="3">
+            Vous devez choisir un fournisseur de service de confiance.
+        </li>
+    </ul>
+  </section>
+
+  <section style="top: 350px;">
+    <h2 id="sur-un-disque-externe">Sur un disque dur externe</h2>
+    <ul>
+        <li class="fragment highlight-green" data-fragment-index="1">
+            Vous ne dépendez pas d'aucun fournisseur de service
+        </li>
+        <li class="fragment highlight-green" data-fragment-index="2">
+            Vous n'avez pas besoin de connexion
+        </li>
+        <li class="fragment highlight-red" data-fragment-index="3">
+            Vous transportez vos données sur vous
+        </li>
+    </ul>
+  </section>
+     </section>
+
+  <section style="top: 35px;">
+    <h2 id="en-veille">i has an idea</h2>
+  </section>
+
+  <!-- Slide principal : Chiffrement avec slides verticaux -->
+<section>
+  <!-- Slide vertical 1 : Le chiffrement -->
+  <section>
+    <h2 id="le-chiffrement">Le chiffrement</h2>
+    <p>Protégez vos données avec :</p>
+    <ul>
+      <li><a href="https://veracrypt.io/en/Home.html">Veracrypt</a></li>
+      <li><a href="https://cryptomator.org/">Cryptomator</a></li>
+    </ul>
+  </section>
+
+<!-- Slide Veracrypt -->
+<section>
+  <h2 id="veracrypt">Veracrypt</h2>
+  <p>
+    Le logiciel Veracrypt permet de chiffrer un dossier ou un périphérique externe, disque dur ou clé USB.
+    Il permet même de chiffrer l'intégralité d'un système d'exploitation.
+  </p>
+  <p>
+    <a href="https://lmv.uca.fr/wp-content/uploads/2019/09/windows-tuto-veracrypt.pdf">Le tutoriel</a> (français)
+  </p>
+</section>
+
+<!-- Slide Cryptomator -->
+<section>
+  <h2 id="cryptomator">Cryptomator</h2>
+  <p>
+    S'il permet de stocker des coffres forts de données localement,
+    Cryptomator a été pensé pour être utilisé avec des services de stockage dans le cloud.
+    Cryptomator intègre nativement l'utilisation de Dropbox, GoogleDrive, iCloud et OneDrive.
+    Cryptomator propose également des applications mobiles pour Android et iOS (payantes).
+  </p>
+  <p>
+    <a href="https://docs.cryptomator.org/desktop/setup/">Le tutoriel</a> (anglais)
+  </p>
+</section>
+</section>
+
+<section>
+
+  <!-- 🧠 Slide 1 : Titre -->
+  <section style="top: 350px;">
+    <h2 id="effacement-securisé">Effacement sécurisé</h2>
+    <p>
+        Lorsque vous effacez un fichier, vous ne faites que supprimé son entrée dans l'index du disque dur.
+        Autrement dit, vous n'effacer jamais le fichier mais seulement sa référence.
+    </p>
+  </section>
+
+  <!-- 📱 Slide 2 : Deux écosystèmes -->
+  <section style="top: 350px;">
+    <p>
+        Le fichier reste physiquement présent sur le disque dur jusqu'a ce qu'il soit écrasé par de nouvelles données.
+        C'est pourquoi il est souvent possible de récupérer des fichiers effacés avec des logiciels spécialisés.
+    </p>
+  </section>
+  
+
+<!-- Slide : Batterie démontée -->
+<section>
+  <p>
+    Pour se débarrasser <strong>définitivement</strong> d'un fichier, il vous faudra utiliser utiliser des outils d'effacement sécurisés disponible sur Windows, Linux, Android et Mac OS.
+    Malheureusement, toujours pas sur iOS.
+  </p>
+  
+</section>
+
+
+
+    <!-- Slide vertical 2 : 5 Questions à se poser (dernier slide en bas) -->
+    <section style="top: 350px;">
+        <h2 id="windows">Windows</h2>
+        <p>
+            <a href="https://sourceforge.net/projects/eraser/">Eraser</a>
+        </p>
+    </section>
+    
+
+    <section style="top: 350px;">
+        <h2 id="linux">Linux</h2>
+        <p>
+            <a href="https://doc.ubuntu-fr.org/wipe">Wipe</a>
+        </p>
+    </section>
+
+    <section style="top: 350px;">
+        <h2 id="android">Android</h2>
+        <p>
+            <a href="https://play.google.com/store/apps/details?id=com.a0soft.gphone.acc.free&hl=fr">1 Tap Cleaner</a>
+        </p>
+    </section>
+
+    <section style="top: 350px;">
+        <h2 id="mac-os">Mac OS</h2>
+        <p>
+            La fonction « Vider la corbeille en mode sécurisé » a été retiré d'OS X 10.11.
+            Apple estimait qu'elle ne pouvait garantir une suppresion en toute sécurité sur les disques SSD.
+        </p>
+        <p>
+            Si vous utilisez un disque dur traditionnel avec OS X 10.11 et que vous pouvez utiliser la ligne de commande,
+            vous pouvez utiliser <a href="https://www.macworld.com/article/226835/how-to-replace-secure-empty-trash-in-os-x-el-capitan.html">la commande srm</a>
+            pour écraser le fichier. 
+        </p>
+    </section>
+
+<section style="top: 350px;">
+    <p>
+        Si vous savez comment utiliser le terminal sur Mac OS,
+        vous pouvez depuis Mac OS 10.12 utiliser la commande
+    </p>
+    <pre class="code-wrapper">
+       <span class="h1js-built_in">rm -P</span> 
+    </pre>
+    </p>
+</section>
+
+
+
+  <!-- 🧠 Slide 1 : Titre -->
+  <section style="top: 350px;">
+    <h2 id="mac-os">Mac OS</h2>
+    <p>
+        Malheureusement, en raison de la façon dont les SSD, les clés USB et les cartes SD fonctionnent,
+        il est difficile, sinon sinon impossible, de supprimer en toute sécurité à la fois des fichiers précis et l'espace disque libre.
+        C'est pourquoi la meilleure approche en matière de protection des données reste l'utilisationdu chiffrement intégral de votre disque.
+    </p>
+  </section>
+</section>
+
+<section>
+
+  <!-- 📱 Slide : Métadonnées  -->
+    <section>
+  <h2 id="metadonnées">Métadonnées</h2>
+  <p>
+    Des fichiers Word, PDF, ou autre sont susceptibles de contenir le nom de leur auteur, la date et l'heure de création du fichier et parfois même une partie de l'historique de l'édition.
+    Ces données "cachées" dépendent du format du fichier ainsi que du logiciel utilisé.
+  </p>
+</section>
+
+
+  
+
+<!-- 🔐 Slide : La BASE -->
+<section style="top: 350px;">
+    <p>
+        Les formats d'images tels que TIFF ou JPEG sont parmi les formats les plus bavards.
+        Ils peuvent contenir :
+    </p>
+     <ul>
+        <li>
+            la date
+        </li>
+        <li>
+            l'heure
+        </li>
+        <li>
+            les coordonnées GPS de l'image
+        </li>
+        <li>
+            la marque
+        </li>
+        <li>
+            le numéro de série de l'appareil
+        </li>
+     </ul>
+     </section>
+
+
+  <section style="top: 350px;">
+    <p>
+        Les fichiers bureautiques de type Office peuvent comporter des informations sur l'auteur ou l'entreprise qui a crée le document.
+        <strong>
+            Un simple clic sur un fichier peut vous donner beaucoup d'informations.
+        </strong>
+    </p>
+  </section>
+
+  <section style="top: 350px;">
+    <p>
+        Vous avez la possibilité de les supprimer avec le logiciel de création du document,
+        que ce soit Microsoft Word ou Open Office.
+    </p>
+    <pre class="code-wrapper">
+       <span class="h1js-built_in">Menu Fichier > Propriétés</span> 
+  </section>
+
+  <section style="top: 350px;">
+    <p>
+        Les fichiers PDF peuvent aussi faire office de mouchard.
+        Ils comportent souvent le nom de l'auteur.
+        Celui ci est accessible dans les propriétés du fichier et modifiable à l'aide d'un logiciel d'édition de fichiers pdf.
+        <br>
+        Pour modifier l'auteur du document avec Acrobat Writer sous Windows ou Mac, il suffit d'aller dans le menu 
+        </p>
+        <pre class="code-wrapper">
+       <span class="h1js-built_in">Fichier > Propriétés.</span> 
+  </section>
+
+
+  <section style="top: 350px;">
+    <p>
+        Sous Gnu / Linux, il existe des alternatives libres et gratuites telle que 
+        <a href="https://doc.ubuntu-fr.org/pdfmod">Pdf Mod</a> qui permettent d'éditer aussi simplement les métadonnées des fichiers PDF.
+    </p>
+  </section>
+
+<section style="top: 350px;">
+    <p>
+        L'extension Firefox 
+        <a href="https://addons.mozilla.org/fr/firefox/addon/exif-viewer/">Exif Viewer</a>
+        permet d'afficher les métadonnées des images JPEG.
+        Ell est également disponible pour le navigateur
+        <a href="https://chromewebstore.google.com/detail/exif-viewer-classic/nafpfdcmppffipmhcpkbplhkoiekndck">Chrome</a>.
+    </p>
+</section>
+
+<section style="top: 350px;">
+    <h2 id="modifier-les-métadonnées">Modifier les métadonnées</h2>
+    <p>
+        Il existe des outils permettant d'éditer l'ensemble des métadonnées quel que soit le type du fichier à manipuler :
+        PDF, JPEG, GIF, etc.
+    </p>
+    <p>
+        Leur usage requiert un peu plus d'expérience.
+    </p>
+</section>
+
+<section style="top: 350px;">
+    <ul>
+        <li>
+            <a href="https://exiftool.org/">ExifTool</a> : un outil en ligne de commande pour lire, écrire et éditer les métadonnées.
+        </li>
+        <li>
+            <a href="https://www.advancedrenamer.com/fr">Advanced Renamer</a> : Il permet de renommer des fichiers en masse en fonction de leurs métadonnées.
+        </li>
+        <li>
+            <a href="https://www.nirsoft.net/utils/file_metadata_viewer.html">File MetaData Viewer</a> : un outil Windows qui permet de visualiser et éditer les métadonnées de plusieurs types de fichiers.
+        </li>
+    </ul>
+</section>
+  </section>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+<section style="top: 350px;">
+    <h1 id="Questions">Questions ?</h1>
+</section>
+
+<section style="top: 350px;">
+    <h2 id="contacts">Contacts</h2>
+    <ul>
+        <li>
+            Mail : snsecure@outlook.fr
+        </li>
+    </ul>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JS Reveal.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true
+        });
+    </script>
+</body>
+</html>

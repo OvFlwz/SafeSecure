@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation sécurisée - Safe&Secure</title>
+
+    <!-- CSS Reveal.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.css" id="theme">
+
+    <!-- Highlight.js pour code -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/monokai.min.css">
+
+    <!-- Forcer fond noir et texte blanc -->
+    <style>
+        .reveal {
+            background-color: #000 !important;
+            color: #fff !important;
+        }
+        .reveal img {
+            display: block;
+            margin: 0 auto;
+            max-width: 80%;
+            height: auto;
+        }
+        a { color: #0ff; }
+    </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Slide principale -->
+      <section style="top: 350px;">
+        <h1>Navigation sécurisée</h1>
+      </section>
+
+      <!-- Groupe vertical : Hameçonnage -->
+      <section>
+        <section style="top: 283.5px;">
+          <h1 id="hameçonnage">Hameçonnage</h1>
+        </section>
+        <section style="top: 350px;">
+          <img src="/Assets/Phishing.gif" alt="Phishing" title="Phishing">
+        </section>
+        <section style="top: 350px;">
+          <h1 id="urls">Urls</h1>
+          <p>
+            Savoir lire une url pour éviter 
+            <a href="https://www.metacompliance.com/fr/blog/phishing-et-ransomware/5-facons-pour-identifier-un-site-de-phishing">les attaques de type phishing</a> :
+            <br>
+            protocole://sousdomaine.domaine.tld
+          </p>
+        </section>
+        <section style="top: 350px;">
+          <h2 id="question">Question</h2>
+          <p>
+            A qui appartient l'adresse ci-dessous ? <br>
+            https://www.facebook.secure.com/friends/
+          </p>
+        </section>
+        <section style="top: 350px;">
+          <h2 id="question">Question</h2>
+          <p>
+            A qui appartient l'adresse ci-dessous ? <br>
+            https://www.drive.google.com.downlaod.sytez.net
+          </p>
+        </section>
+        <section style="top: 350px;">
+          <p>Les réseaux sociaux et les outils de communication sont les principaux vecteurs de transmission de malwares.</p>
+        </section>
+        <section style="top: 350px;">
+          <p>
+            S'il est important d'installer un antivirus sur ces appareils, il est encore plus important de faire preuve de bon sens lorsque vous recevez un lien ou une pièce jointe par mail ou sms.
+          </p>
+        </section>
+        <section style="top: 350px;">
+          <ul>
+            <li>Ne téléchargez pas de fichiers ou ne cliquez pas sur des liens envoyés par des expéditeurs inconnus.</li>
+            <br>
+            <li>Vérifiez soigneusement l'adresse mail ou les comptes RS de ceux qui partagent un lien avec vous. En cas de doute, vérifiez leur identité via d'autres contacts ou une recherche en ligne.</li>
+          </ul>
+        </section>
+      </section> <!-- ✅ On ferme ici la pile verticale -->
+
+     <div class="slides">
+
+<div class="slides">
+
+  <!-- Slide horizontal : Quiz -->
+  <section style="top: 350px;">
+    <h2 id="quiz">Quiz</h2>
+    <p>
+      Savez-vous reconnaître
+      <a href="https://phishingquiz.withgoogle.com/?hl=fr">toutes les tentatives d'hameçonnage</a>
+      ?
+    </p>
+  </section>
+  </div>
+<!-- Slide horizontal : Points d’interception -->
+<section>
+
+  <!-- Slide vertical 1 : le titre -->
+  <section style="top: 350px;">
+    <h1 id="points-dinterception-en-ligne">Points d'interception en ligne</h1>
+  </section>
+
+  <!-- Slide vertical 2 : l'image -->
+  <section style="top: 350px;">
+    <img src="/Assets/interception.png" alt="Interception" />
+  </section>
+
+
+  <!-- Slide vertical 3 : HTTP[S] -->
+  <section style="top: 350px;">
+    <h2 id="https">HTTP[S]</h2>
+    <ol>
+      <li>
+        <strong>S</strong> comme <strong>Safran,</strong> la société qui a inventé ce protocole ?
+      </li>
+      <br>
+      <li>
+        <strong>S</strong> comme <strong>Sécurisé</strong> ?
+      </li>
+      <br>
+      <li>
+        <strong>S</strong> comme <strong>https,</strong> pluriel de http ?
+      </li>
+    </ol>
+  </section>
+
+   <!-- ✅ Slide vertical 4 : http[s] simplifié -->
+  <section style="top: 350px;">
+    <h1 id="https">http[s]</h1>
+    <p>
+      <strong>S</strong> comme <strong>Sécurisé</strong> !
+    </p>
+  </section>
+<!-- Slide vertical 5 : image https -->
+  <section style="top: 350px;">
+    <img src="/Assets/https.jpg" alt="HTTPS" />
+  </section>
+
+  <!-- Slide vertical 6 : Explications HTTPS -->
+  <section style="top: 350px;">
+    <h1 id="https">http[s]</h1>
+    <ol>
+      <li>
+        <strong>Authenticité</strong> : certificats https = carte d'identité du site
+      </li>
+      <br>
+      <li>
+        <strong>Confidentialité</strong> : le trafic vers le site est chiffré
+      </li>
+      <br>
+      <li>
+        <strong>Intégrité</strong> : les données envoyées ne peuvent être modifiées
+      </li>
+    </ol>
+  </section>
+
+<!-- Slide vertical 5 : image https -->
+  <section style="top: 350px;">
+    <img src="/Assets/interception-https.png" alt="HTTPS" />
+  </section>
+
+
+  <!-- Slide vertical 6 : Explications HTTPS -->
+  <section style="top: 350px;">
+    <h1 id="solution">Solution</h1>
+    <ul>
+      <li>
+        Utilisez Firefox ou Chrome
+      </li>
+      <br>
+      <li>
+        Installez Duck Duck Search & Tracker sur 
+        <a href="https://addons.mozilla.org/fr/firefox/addon/duckduckgo-for-firefox/">Firefox</a>
+        ou 
+        <a href="https://chromewebstore.google.com/detail/duckduckgo-search-tracker/bkdgflcldnnnapblkhphbgpggdiikppg">Chrome</a>
+      </li>
+      <br>
+      <li>
+        Utilisez le navigateur Duck Duck Browser sur
+        <a href="https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android">Android</a>
+        ou 
+        <a href="https://apps.apple.com/us/app/duckduckgo-browser-search-ai/id663592361">IOS</a>
+      </li>
+    </ul>
+ </section>
+ </section>
+
+<!-- Slide horizontal : Points d’interception -->
+<section style="top: 350px;">
+
+  <!-- Slide vertical 1 : titre -->
+  <section style="top: 350px;">
+    <h1 id="points-dinterception-en-ligne">Points d'interception en ligne</h1>
+  </section>
+
+  <!-- Slide vertical 2 : image HTTPS -->
+  <section style="top: 350px;">
+    <p>
+      L'utilisation de https ne dépend pas de vous mais du site que vous visitez.
+      Si beaucoup de sites proposent une version sécurisée, ce n'est pas le cas de tous.
+      Environ 34 % des sites ne proposent pas de version sécurisée.
+    </p>
+
+</section>
+
+  <section style="top: 350px;">
+    <p>
+      HTTPS sécurise les échanges de données entre vous et le site que vous visitez mais 
+      <strong>n'assure pas la confidentialité de votre navigation sur le web</strong>.
+      Les noms de domaines des sites que vous visitez sont toujours visible par votre FAI.
+    </p>
+    </section>
+    </section>
+
+
+<div class="reveal">
+  <div class="slides">
+
+    <!-- Slide horizontal 1 : Bloc vertical -->
+    <section>
+
+      <!-- Slide vertical 1 : Solution -->
+      <section style="top: 350px;">
+        <h2 id="solution">Solution</h2>
+        <p>
+          Protégez et chiffrez votre connexion avec un 
+          <a href="https://www.journaldugeek.com/vpn/no-log/">VPN</a>
+        </p>
+      </section>
+
+      <!-- Slide vertical 2 : image -->
+      <section style="top: 350px;">
+        <img src="/Assets/vpn-and-https-2-en.png" alt="HTTPS" />
+      </section>
+
+      <!-- Slide vertical 3 : Sur Smartphone -->
+      <section style="top: 350px;">
+        <h2 id="sur-smartphone">Sur Smartphone</h2>
+        <ul>
+          <li>
+            Openvpn Connect pour 
+            <a href="https://play.google.com/store/apps/details?id=net.openvpn.openvpn">Android</a>
+            et
+            <a href="https://apps.apple.com/fr/app/openvpn-connect/id590379981">IOS</a>
+          </li>
+        </ul>
+      </section>
+
+    </section> <!-- fin du slide horizontal 1 -->
+<!-- Slide horizontal 2 : Points d’interception -->
+<section style="top: 350px;">
+
+  <!-- Slide vertical 1 : Titre -->
+  <section style="top: 350px;">
+    <h1 id="points-dinterception-en-ligne">Points d'interception en ligne</h1>
+  </section>
+
+  <!-- Slide vertical 2 : Texte explicatif (dernier slide en bas) -->
+  <section style="top: 350px;">
+    <p>
+      Si votre trafic est chiffré, cela ne signifie pas que vous êtes anonyme.
+      Vous laissez énormément de traces en ligne, bien au-delà de la fameuse adresse IP.
+      C'est votre 
+      <a href="https://www.amiunique.org/fr">empreinte numérique</a>.
+    </p>
+  </section>
+
+
+
+<section style="top: 350px;">
+        <img src="/Assets/empreinte-numerique.png" alt="empreinte numérique" />
+      </section>
+
+      <section style="top: 350px;">
+        <h2 id="solution">Solution</h2>
+        <p>
+          Pour protéger votre traffic et votre identité sur le web,
+          <br>
+          utilisez le navigateur
+          <a href="https://www.torproject.org/download/">Tor</a>
+        </p>
+      </section>
+
+      <section style="top: 350px;">
+        <img src="/Assets/interception-tor-https.png" alt="empreinte numérique" />
+      </section>
+
+
+        <section style="top: 350px;">
+        <h2 id="sur-smartphone">Sur Smartphone</h2>
+        <ul>
+          <li>
+            <a href="https://guardianproject.info/apps/org.torproject.torbrowser/">Tor Browser</a>
+            pour Android
+          </li>
+          <li>
+            <a href="https://apps.apple.com/us/app/onion-browser/id519296448">Onion Browser</a>
+            pour IOS
+          </li>
+        </ul>
+      </section>
+
+  </div>
+</div>
+
+  <!-- Slide vertical 1 : Titre -->
+  <section style="top: 350px;">
+    <h1 id="pour-aller-plus-loin">Pour aller plus loin</h1>
+    <p>
+    <img src="/Assets/laptop-tails.svg" title="Tails" alt="Tails">
+    </p>
+    <p>
+      Utilisez un système d'exploitation portable spécialisé dans la protection de vie privée :
+      <a href="https://tails.net/index.fr.html">Tails</a>
+    </p>
+
+  </section>
+
+
+
+  <section style="top: 350px;">
+    <h1>Questions ?</h1>
+  </section>
+  
+  <section style="top: 350px;">
+    <h2>Contact</h2>
+    <ul>
+      <li>
+        Mail : snsecure@outlook.fr
+      </li>
+    </ul>
+    </section>
+
+
+  
+
+
+
+
+
+
+
+
+    <!-- JS Reveal.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            slidenumber: true,
+            transition: 'slide',
+            dependencies: [
+                { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js' },
+                { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js', async: true },
+                { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+            ]
+        });
+    </script>
+</body>
+</html>
